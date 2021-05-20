@@ -38,7 +38,6 @@ module.exports = {
   },
 
   async getUser (req, res) {
-    console.log(req.params)
     try {
       const user = await User.findByPk(req.params.userId, {
         attributes: { exclude: ['password', 'forgotPassword', 'createdAt', 'updatedAt'] }
@@ -70,12 +69,6 @@ module.exports = {
           image: image
         })
       }
-
-      await UserTitle.create({
-        date: today,
-        UserId: user.id,
-        TitleId: '4'
-      })
 
       res.status(201).send({
         message: req.body.firstName + ' ' + req.body.lastName + ' was added successfully.',

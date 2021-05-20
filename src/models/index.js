@@ -1,6 +1,7 @@
 const sequelize = require('sequelize')
 const config = require('../config/config')
 
+const companyModel = require('./Company')
 const userModel = require('./User')
 
 const sequel = new sequelize(
@@ -13,6 +14,7 @@ const sequel = new sequelize(
 sequel.query('SET GLOBAL FOREIGN_KEY_CHECKS = 0')
 
 const models = {
+  Company: companyModel(sequel, sequelize.DataTypes),
   User: userModel(sequel, sequelize.DataTypes)
 }
 

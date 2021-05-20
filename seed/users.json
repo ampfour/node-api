@@ -16,6 +16,7 @@
     "workPhone": "",
     "status": "active",
     "mini": 1,
-    "picture": "troy.jpg"
+    "picture": "troy.jpg",
+    "CompanyId": "1"
   }
 ]
