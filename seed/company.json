@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Acme Inc.",
+    "contact": "John Doe",
+    "email": "john@acme.com",
+    "phone": "(775) 555-5555",
+    "active": true
+  }
+]

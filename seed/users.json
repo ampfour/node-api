@@ -5,17 +5,7 @@
     "forgot_password": "",
     "firstName": "Troy",
     "lastName": "Gardner",
-    "middle": "M",
-    "address1": "10442 Gold Trail Dr.",
-    "address2": "",
-    "city": "Reno",
-    "state": "NV",
-    "zip": "89521",
-    "homePhone": "",
-    "cellPhone": "(775) 722-8769",
-    "workPhone": "",
-    "status": "active",
-    "mini": 1,
+    "active": true,
     "picture": "troy.jpg",
     "CompanyId": "1"
   }

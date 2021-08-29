@@ -9,9 +9,9 @@ module.exports = (sequelize, DataTypes) => {
       state: DataTypes.STRING(2),
       zip: DataTypes.STRING(10),
       description: DataTypes.TEXT,
-      status: {
-        type: DataTypes.ENUM('active', 'inactive'),
-        defaultValue: 'active'
+      active: {
+        type: DataTypes.BOOLEAN,
+        notEmpty: true
       },
     })
 
